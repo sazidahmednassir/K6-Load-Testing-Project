@@ -1,7 +1,7 @@
 import http from 'k6/http';
 import {check, sleep} from 'k6';
 import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js";
-import generateToken from "C:/Assignment on K6/generateToken.js";
+import generateToken from "./generateToken.js";
 
 export const options = {
     scenarios: {
