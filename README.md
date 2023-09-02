@@ -11,20 +11,20 @@ This Test Reports Generated Below Criteria:
 
    i) http_req_duration: [‘p(95)< 3000ms’]
 
-  ii) http_req_failed: [‘rate < 0.01’]
+   ii) http_req_failed: [‘rate < 0.01’]
 
  
 
 2. Write a script based on the info:
 
-a) 30 request per second
+   a) 30 request per second
 
-b) duration 2 minutes
+   b) duration 2 minutes
 
-c) acceptance metrics
+   c) acceptance metrics
 
-i) http_req_duration: [‘p(95)< 5000ms’]
+      i) http_req_duration: [‘p(95)< 5000ms’]
 
-ii) http_req_failed: [‘rate < 0.05’]
+     ii) http_req_failed: [‘rate < 0.05’]
 
-iii) http_reqs: [‘rate > 25’]
+     iii) http_reqs: [‘rate > 25’]
