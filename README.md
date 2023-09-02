@@ -3,15 +3,15 @@ This Test Reports Generated Below Criteria:
 
 1. Write a script for the stress test:
 
-a) target 200
+   a) target 200
 
-b) duration 10 minutes
+   b) duration 10 minutes
 
-c) acceptance metrics
+   c) acceptance metrics
 
-i) http_req_duration: [‘p(95)< 3000ms’]
+   i) http_req_duration: [‘p(95)< 3000ms’]
 
-ii) http_req_failed: [‘rate < 0.01’]
+  ii) http_req_failed: [‘rate < 0.01’]
 
  
 
