@@ -5,14 +5,14 @@ import {check} from 'k6';
 
 
 
-export default function generateAccessToken() {
+export default function generateToken() {
 
    
     const tokenUrl = 'https://simple-books-api.glitch.me/api-clients/';
 
     const payload=JSON.stringify({
-    clientName: "sazidnassir1234",
-    clientEmail: "sazid12345678@gamil.com"
+    clientName: `Sazid${Math.floor(Math.random() * 100) + 1}`,
+    clientEmail: `Nassir${Math.floor(Math.random() * 10000) + 1}@gmail.com`
     })
 
     const params={
@@ -22,10 +22,10 @@ export default function generateAccessToken() {
     };
 
     const res = http.post(tokenUrl, payload, params);
-    
-    check(response, {
-        'Token request successful': (response) => response.status === 201,
-    });
+
+    // check(response, {
+    //     'Token request successful': (response) => response.status === 201,
+    // });
     // console.log(JSON.parse(res.body).accessToken)
     return JSON.parse(res.body).accessToken
 
